@@ -1,7 +1,8 @@
+import styles from '@/app/page.module.css';
+
 export default function Layout({ children, modal }: { children: React.ReactNode; modal: React.ReactNode }) {
   return (
-    <div>
-      비포 로그인 레이아웃
+    <div className={styles.container}>
       {children}
       {modal}
     </div>

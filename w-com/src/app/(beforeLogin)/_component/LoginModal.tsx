@@ -3,6 +3,9 @@
 import style from '@/app/(beforeLogin)/_component/login.module.css';
 import { useState } from 'react';
 
+// _폴더 = private 폴더
+// 주소창에 검색되지않음. 총 (), @(페러렐), _ 3개의 폴더
+// 서버 컴포넌트는 클라이언트 컴포넌트를 import 가능하지만, 클라이언트 -> 서버 import하면 안됨!
 export default function LoginModal() {
   const [id, setId] = useState();
   const [password, setPassword] = useState();
